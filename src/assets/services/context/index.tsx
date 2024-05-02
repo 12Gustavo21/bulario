@@ -1,6 +1,9 @@
 import { createContext, useState, useEffect, ReactNode } from 'react';
+
+// axios
 import axios from 'axios';
 
+// Define a interface para os medicamentos
 interface Medicine {
   id: string;
   name: string;
@@ -8,21 +11,26 @@ interface Medicine {
   company: string;
 }
 
+// Define a interface para o contexto da API
 interface ApiContextProps {
   medicines: Medicine[];
   loading: boolean;
 }
 
+// Cria o contexto da API
 const ApiContext = createContext<ApiContextProps>({
   medicines: [],
   loading: true,
 });
 
+// Define as propriedades do provedor da API
 interface ApiProviderProps {
   children: ReactNode;
 }
 
+// Cria o provedor da API
 const ApiProvider: React.FC<ApiProviderProps> = ({ children }) => {
+  // Define os estados para os medicamentos e status de carregamento
   const [medicines, setMedicines] = useState<Medicine[]>([]);
   const [loading, setLoading] = useState(true);
 
