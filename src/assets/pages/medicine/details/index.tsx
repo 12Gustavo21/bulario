@@ -9,6 +9,9 @@ import { Medicine } from "../../../../types";
 //axios
 import axios from "axios";
 
+// pdf
+import samplePDF from "../../../../assets/pdf/pdf_sample.pdf";
+
 //components
 import Layout from "../../../components/layout";
 import Animation from "../../../components/animations/pills";
@@ -71,7 +74,7 @@ export default function Index() {
                   data-aos-duration="3000"
                 >
                   <p>Tipo: {document.type}</p>
-                  <a href={document.url} target="_blank" rel="noreferrer">
+                  <a href={samplePDF} target="_blank" rel="noreferrer">
                     Visualizar
                   </a>
                 </div>
