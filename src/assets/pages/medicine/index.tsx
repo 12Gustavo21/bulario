@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import { Link } from "react-router-dom";
 
 //style
-import "./style.sass";
+import "./style.css";
 
 //AOS
 import AOS from "aos";

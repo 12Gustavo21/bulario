@@ -6,7 +6,7 @@ import Pills from "/pills.svg";
 import { Link } from "react-router-dom";
 
 //styles
-import "./style.sass";
+import "./style.css";
 
 //AOS
 import AOS from "aos";

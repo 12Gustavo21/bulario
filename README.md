@@ -1,31 +1,31 @@
-[![](https://dotlib.com/theme/img/logos/logo.png)](https://www.dotlib.com)
+# Bulario
 
-# Descrição da vaga de Desenvolvedor Frontend Jr.
+> Status : Finished project ✅ / Open PR
 
-Buscamos profissionais que sejam apaixonados por desenvolvimento, inovação e novas tecnologias, para integrar nosso time em projetos baseados em Laravel, Node.js, React e React Native.
+## Dotlib - Challenge 🎯
 
-[Oportunidades Dotlib](https://github.com/Dotlib-BR/oportunidades)
+<img width ='800px' src ='src/assets/img/home-print.png' />
 
-## Requisitos
+_Technologies_
 
-### Obrigatórios:
+- Vite ⚡
+- SASS 🎨
+- React Router Dom 📍
+- TypeScript 📚
+- Axios 🌐
+- Json Server 📦
+- AOS (Animate On Scroll) 📈
+- Lottie 🎥
 
-- Experiência em desenvolvimento de sites em React
-- Consumo de APIs RESTful
-- SASS e Flexbox
-- API Contexts e Hooks
-- Controle de versões (GIT)
+### Requirements
+- Node.js (v20.15.0) or higher
+- NPM (v10.8.1)
 
-### Bônus:
+### How to use
 
-- Conhecimentos em Docker
-- Conhecimentos em Typescript
-- Conhecimentos em Node.js
-- Conhecimentos em testes automatizados com Cypress
-- Experiência em metodologias ágeis (Scrum/Kanban)
+- git clone https://github.com/12Gustavo21/bulario.git or download the zip
+- npm install or yarn install
+- code . (if you use VSCode)
+- npm run dev or yarn dev
 
-## Como se candidatar
-
-Para se candidatar, basta acessar a url e realizar o teste para a vaga:
-
-- [Teste para Desenvolvedor Frontend Jr.](teste-frontend.md)
+## 💻 Online Page: None yet

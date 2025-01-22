@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.container h2 {
+  font: 900 2.5rem "Quicksand", sans-serif;
+  text-wrap: pretty;
+  text-align: center;
+  padding: 1rem 0;
+}
+.container a button {
+  width: 10rem;
+  height: 3rem;
+  font: 500 1rem "Platypi", sans-serif;
+  color: #f9f9f9;
+  background-color: #517664;
+  border: none;
+  outline: none;
+  border-radius: 0.625rem;
+  box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  margin: 1rem 0;
+}
+.container a button:hover {
+  background-color: #2D3319;
+  box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}/*# sourceMappingURL=style.css.map */

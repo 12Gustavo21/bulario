@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 
 //style
-import "./style.sass";
+import "./style.css";
 
 //AOS
 import AOS from "aos";
@@ -16,11 +16,17 @@ export default function Index() {
     <>
       <footer>
         <section className="footer__container">
-          <h3 data-aos="fade-up" data-aos-duration="2000" data-aos-anchor-placement="top-bottom">
+          <h3
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            data-aos-anchor-placement="top-bottom"
+          >
             Teste para vaga de desenvolvedor front-end
           </h3>
-          <p data-aos="fade-up" data-aos-duration="3000"
-          data-aos-anchor-placement="top-bottom"
+          <p
+            data-aos="fade-up"
+            data-aos-duration="3000"
+            data-aos-anchor-placement="top-bottom"
           >
             Desenvolvido por{" "}
             <a

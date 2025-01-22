@@ -14,7 +14,7 @@ import { Medicine } from "../../../types";
 import magnifyingGlass from "/magnifyingGlass.svg";
 
 //styles
-import "./style.sass";
+import "./style.css";
 
 //AOS
 import AOS from "aos";
@@ -22,7 +22,6 @@ import "aos/dist/aos.css";
 
 // Declara o componente MedicineList como uma função de componente React
 const MedicineList: React.FC = () => {
-
   // Usa o contexto da API para obter medicamentos e status de carregamento
   const { medicines, loading } = useContext(ApiContext);
 
@@ -65,7 +64,6 @@ const MedicineList: React.FC = () => {
     setSortedMedicines(sorted as Medicine[]);
   }, [medicines]);
 
-
   // Filtra os medicamentos com base na consulta de pesquisa e medicamentos ordenados
   useEffect(() => {
     // Filtra os medicamentos com base no nome e fabricante
@@ -76,7 +74,6 @@ const MedicineList: React.FC = () => {
     );
     setFilteredMedicines(filtered);
   }, [query, sortedMedicines]);
-
 
   // Inicializa a biblioteca AOS
   useEffect(() => {

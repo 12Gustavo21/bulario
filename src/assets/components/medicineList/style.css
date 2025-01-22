@@ -1,0 +1,213 @@
+.medicine__list {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-bottom: 2rem;
+}
+.medicine__list a {
+  text-decoration: none;
+  width: 50%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1 30rem;
+}
+@media (width <= 1067px) {
+  .medicine__list a {
+    flex: 1 1 25rem;
+  }
+}
+
+.search__bar {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+.search__bar input {
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: auto;
+  right: 0.5rem;
+  bottom: auto;
+  left: auto;
+  border-radius: 0.3125rem;
+  border: none;
+  outline: none;
+  padding: 0 0.5rem 0 3.3rem;
+  font: 500 1.2rem "Quicksand", sans-serif;
+  color: #517664;
+  background-color: #f9f9f9;
+  outline: none;
+  transition: 0.3s;
+}
+.search__bar input::-moz-placeholder {
+  color: #517664;
+  font-size: 1.2rem;
+}
+.search__bar input::placeholder {
+  color: #517664;
+  font-size: 1.2rem;
+}
+.search__bar img {
+  width: 1.5rem;
+  position: relative;
+  top: auto;
+  right: auto;
+  bottom: auto;
+  left: 2rem;
+  cursor: pointer;
+  z-index: 1;
+}
+@media (width <= 768px) {
+  .search__bar input {
+    font-size: 1rem;
+  }
+  .search__bar input::-moz-placeholder {
+    font-size: 1rem;
+  }
+  .search__bar input::placeholder {
+    font-size: 1rem;
+  }
+}
+
+.no__results {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font: 600 1.5rem "Platypi", sans-serif;
+  color: #2D3319;
+  text-align: center;
+  padding: 1rem;
+  overflow-x: hidden;
+  max-width: 100%;
+}
+.no__results p {
+  text-wrap: pretty;
+}
+
+.medicine__card {
+  width: 100%;
+  height: 11vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #D6E5E3;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 0.625rem;
+  box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.medicine__card p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font: 500 1rem "Quicksand", sans-serif;
+  color: #2D3319;
+  text-wrap: pretty;
+  text-align: center;
+}
+.medicine__card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.2);
+  background-color: #f9f9f9;
+  border-radius: 0.625rem;
+  transition: all 0.3s ease;
+}
+@media (width <= 768px) {
+  .medicine__card {
+    width: 100%;
+    height: 15vh;
+  }
+  .medicine__card p {
+    font-size: 0.9rem;
+  }
+}
+
+.pagination {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+.pagination .active a {
+  background-color: #517664;
+  color: #f9f9f9;
+}
+.pagination button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+.pagination a {
+  width: 2.5rem;
+  height: 2.5rem;
+  text-decoration: none;
+  font: 500 1.2rem "Platypi", sans-serif;
+  color: #2D3319;
+  padding: 0.5rem 1rem;
+  border-radius: 100%;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+.pagination a:hover {
+  background-color: #517664;
+  color: #f9f9f9;
+  box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+.pagination a.active {
+  background-color: #517664;
+  color: #f9f9f9;
+  box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.loading {
+  width: 3rem;
+  height: 3rem;
+  border: 0.5rem solid #f3f3f3;
+  border-top: 0.5rem solid #517664;
+  border-radius: 50%;
+  margin: 1rem 0;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}/*# sourceMappingURL=style.css.map */

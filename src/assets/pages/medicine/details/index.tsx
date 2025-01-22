@@ -14,7 +14,7 @@ import Layout from "../../../components/layout";
 import Animation from "../../../components/animations/pills";
 
 //style
-import "./style.sass";
+import "./style.css";
 
 //AOS
 import AOS from "aos";
@@ -31,6 +31,8 @@ export default function Index() {
     });
 
     AOS.init();
+
+    window.scrollTo(0, 0);
   }, [id]);
 
   return (
@@ -42,33 +44,29 @@ export default function Index() {
               <h1 data-aos="fade-up" data-aos-duration="2000">
                 Detalhes do Medicamento
               </h1>
-              <p
-                data-aos="fade-up"
-                data-aos-duration="3000"
-              >Nome: {medicine?.name}</p>
-              <p
-                data-aos="fade-up"
-                data-aos-duration="3000"
-              >
+              <p data-aos="fade-up" data-aos-duration="3000">
+                Nome: {medicine?.name}
+              </p>
+              <p data-aos="fade-up" data-aos-duration="3000">
                 Publicado em:{" "}
                 {new Date(medicine?.published_at ?? "").toLocaleDateString(
                   "pt-BR"
                 )}
               </p>
-              <p
-                data-aos="fade-up"
-                data-aos-duration="3000"
-              >Empressa: {medicine?.company}</p>
+              <p data-aos="fade-up" data-aos-duration="3000">
+                Empressa: {medicine?.company}
+              </p>
             </div>
 
             <div className="medicine__details__documents">
-              <h2
-                data-aos="fade-up"
-                data-aos-duration="2000"
-              >Documentos</h2>
+              <h2 data-aos="fade-up" data-aos-duration="2000">
+                Documentos
+              </h2>
               {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
               {medicine?.documents.map((document: any) => (
-                <div key={document.id} className="medicine__details__document"
+                <div
+                  key={document.id}
+                  className="medicine__details__document"
                   data-aos="fade-up"
                   data-aos-duration="3000"
                 >

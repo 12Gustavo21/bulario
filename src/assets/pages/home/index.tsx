@@ -6,14 +6,13 @@ import MedicineList from "../../components/medicineList";
 import Animation from "../../components/animations/medicine";
 
 //styles
-import "./style.sass";
+import "./style.css";
 
 //AOS
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 export default function Index() {
-
   useEffect(() => {
     AOS.init();
   });
