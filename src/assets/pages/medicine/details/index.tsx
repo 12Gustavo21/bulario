@@ -28,7 +28,7 @@ export default function Index() {
   const [medicine, setMedicine] = useState<Medicine>();
 
   useEffect(() => {
-    axios.get(`http://localhost:3000/data/${id}`).then((response) => {
+    axios.get(`https://api-storage-medicine.vercel.app/data/${id}`).then((response) => {
       setMedicine(response.data);
       console.log(response.data);
     });

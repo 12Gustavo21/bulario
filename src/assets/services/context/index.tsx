@@ -37,7 +37,7 @@ const ApiProvider: React.FC<ApiProviderProps> = ({ children }) => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get<Medicine[]>('http://localhost:3000/data');
+        const response = await axios.get<Medicine[]>('https://api-storage-medicine.vercel.app/data');
         setMedicines(response.data);
         setLoading(false);
       } catch (error) {
