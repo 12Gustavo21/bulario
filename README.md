@@ -13,7 +13,6 @@ _Technologies_
 - React Router Dom 📍
 - TypeScript 📚
 - Axios 🌐
-- Json Server 📦
 - AOS (Animate On Scroll) 📈
 - Lottie 🎥
 
@@ -28,4 +27,4 @@ _Technologies_
 - code . (if you use VSCode)
 - npm run dev or yarn dev
 
-## 💻 Online Page: None yet
+## 💻 Online Page: https://bularioeletronico.vercel.app
